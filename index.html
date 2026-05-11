@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COUL 2025 - International Conference on Urban Livability</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Modal Overlay */
+            .modal-overlay {
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                justify-content: center;
+                align-items: center;
+            }
+
+            /* Modal Content */
+            .modal-content {
+                background: #ffffff;
+                padding: 40px 30px;
+                border-radius: 8px;
+                max-width: 600px;
+                width: 90%;
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+                position: relative;
+                animation: formalFadeIn 0.5s ease-out forwards;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .modal-icon {
+                font-size: 3rem;
+                color: #1a4b84;
+                margin-bottom: 1rem;
+            }
+
+            .modal-content h2 {
+                margin-top: 0;
+                color: #1a4b84;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                /* font-family: 'Times New Roman', Times, serif; */
+                font-weight: 600;
+            }
+
+            .modal-content p {
+                font-size: 1.1rem;
+                color: #444;
+                line-height: 1.6;
+            }
+
+            .highlight-text {
+                color: #1a4b84;
+                font-weight: 600;
+                border-bottom: 1px solid #1a4b84;
+                padding-bottom: 2px;
+            }
+
+            .close-button {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 28px;
+                color: #888;
+                cursor: pointer;
+                transition: color 0.2s ease;
+                z-index: 10;
+            }
+
+            .close-button:hover {
+                color: #960606;
+            }
+
+            .modal-decoration {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background: #1a4b84;
+            }
+
+            @keyframes formalFadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <img src="RPSCGS_PNG_TRANS.png" alt="MANIT Logo" class="manit-logo">
+                    <!-- <img src="coul2025.png" alt="COUL 2025 Logo" class="coul-logo" style="z-index: auto;"> -->
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#committee">Committee</a></li>
+                    <li><a href="#themes">Themes</a></li>
+                    <!-- <li><a href="#tracks">Tracks</a></li>
+                    <li><a href="#segments">Segments</a></li> -->
+                    <li><a href="#dates">Important Dates</a></li>
+                    <!-- <li><a href="#registration">Registration</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+        <!-- <div id="modal" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-decoration"></div>
+                <span class="close-button">&times;</span>
+                <div class="modal-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h2>Publication Announcement</h2>
+                <p>
+                    Accepted papers presented at the <strong>2nd International Conference cum Workshop on Urban
+                        Livability 2025</strong> will be published in the <strong class="highlight-text">IOP Conference
+                        Series: Earth and
+                        Environmental Science (EES)</strong>, a <strong class="highlight-text">Scopus-indexed
+                        proceedings volume</strong>.
+                </p>
+            </div>
+        </div> -->
+        <!-- SVG Filters -->
+        <svg class="svg-filters" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="metallic-effect">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="metallic" />
+                    <feBlend in="SourceGraphic" in2="metallic" mode="multiply" />
+                </filter>
+
+                <linearGradient id="metallic-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#ebdada;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#eedede;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#f1eaea;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <section id="home" class="hero">
+            <div class="metallic-overlay"></div>
+            <div class="hero-content">
+                <h3 class="metallic-text" style="font-size: 1.2rem; font-weight: 500;">
+                    International Conference</h3>
+                <h2 class="metallic-text subtitle-large"
+                    style="font-size: 3rem; line-height: 1.2; margin-bottom: 1rem;color:white;">Rethinking Pedestrian
+                    Spaces<br>for Cities of the Global South <br>2026</h2>
+                <p class="date metallic-text" style="font-size: 1.2rem; margin-bottom: 1rem;">August 7-8, 2026</p>
+                <p class="metallic-text" style="font-size: 1.2rem; line-height: 1.5; margin-bottom: 2rem;">Organised by
+                    <br><b>Department of Architecture &
+                        Planning</b><br>
+                    Maulana Azad National Institute of Technology, Bhopal
+                </p>
+
+                <!-- <a href="#registration" class="cta-button metallic-button"><b>Register Now</b></a> -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <!-- <div class="about-grid">
+                    <div class="about-column">
+                        <h2>About Our Organization</h2>
+                        <p>The Department of Architecture and Planning at Maulana Azad National Institute of Technology
+                            (MANIT), Bhopal, has been a prominent institution in architectural and planning education
+                            since its establishment in 1963. With a legacy spanning over five decades, the department
+                            initially launched the Bachelor of Architecture (B.Arch) program with an intake of 15
+                            students, which has now grown to 80 students annually. Over the years, it has expanded to
+                            include two Master of Planning (M.Plan) programs with specializations in Urban Planning and
+                            Housing, each admitting 18 students. To further meet the growing demands of urban
+                            development, the Bachelor of Planning (B.Planning) program was introduced in 2007, with an
+                            intake of 40 students per year.
+                            The department is not only known for its academic rigor but also for its robust research
+                            environment. More than 43 doctoral degrees have been awarded, and 21 PhD scholars are
+                            currently pursuing research across diverse areas. Graduates from the department have
+                            achieved successful placements and admissions into leading institutions in India and abroad,
+                            with many contributing significantly as professionals and academicians.
+                            The department's vision focuses on promoting creative and original thinking, staying attuned
+                            to social, economic, and market trends, and fostering user-centric, context-sensitive design
+                            approaches. It emphasizes sustainability, community-oriented planning, and the integration
+                            of environmental concerns in design and development. By equipping students with skills in
+                            policy formulation, research, evaluation, and communication, the department aims to shape
+                            professionals capable of addressing contemporary challenges and influencing positive change
+                            in the built environment. The continuous evolution of its curriculum ensures that students
+                            remain at the forefront of innovation, ready to contribute to a better, more inclusive, and
+                            sustainable future.
+                        </p>
+                    </div>
+                    <div class="about-column">
+                        <h2>About COUL 2025</h2>
+                        <p>It is our pleasure to Inform you that Maulana Azad National Institute Of Technology (MANIT)
+                            Bhopal is organising the 2nd International Conference on Urban Livability 2025 : Navigating
+                            Climate Extreme Events in the Global South (COUL 2025). COUL 2025 is scheduled for 3rd
+                            November 2025 and 4th November 2025.</p>
+                        <p>COUL 2025 provides an inter-disciplinary platform for researchers, academicians, and
+                            policy-makers to deliberate and share evidence-based research to understand the extreme
+                            impacts of climate change in the Global South.</p>
+                        <p>The conference will also host a Workshop - Multi-stakeholder Dialogue on 'Climate Resilient
+                            Action Plan for Low-Income Communities' - November 4, 2025. The workshop invites discussions
+                            focused on enhancing the resilience of low-income communities to extreme climate events,
+                            placing their experiences and stories at the forefront. The workshop aims to foster
+                            inclusive dialogues around vulnerability and adaptation by these communities to extreme
+                            events. Additionally, vulnerability assessment maps and community perceptions will be
+                            visualized on an interactive dashboard to support data-driven decision-making and strategic
+                            planning.</p>
+                        <p>Conference will also host a Panel Discussion on Climate Resilience moderated by Dr Yasemin
+                            Didem Aktas, UK with Key stakeholders.</p>
+                    </div>
+                </div> -->
+
+                <div class="concept-note-container container"
+                    style="margin-top: 3rem; margin-bottom: 3rem; padding: 3rem 2rem; background: #fff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); color: #000;">
+
+                    <!-- Header Logos -->
+                    <!-- <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1.5rem; gap: 10px;">
+                        <img src="vref-logo.png" alt="VREF Logo"
+                            style="height: auto; max-height: 50px; max-width: 30%; object-fit: contain;">
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; justify-content: flex-end; max-width: 65%;">
+                            <img src="MANIT2 (1).png" alt="MANIT Logo"
+                                style="height: auto; max-height: 100px; max-width: 50%; object-fit: contain;">
+                            <img src="School_of_Planning_and_Architecture,_Bhopal_logo.png" alt="SPA Logo"
+                                style="height: auto; max-height: 80px; max-width: 45%; object-fit: contain;">
+                        </div>
+                    </div> -->
+
+                    <!-- Titles -->
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">About RPS-CGS 2026</h2>
+                    </div>
+
+                    <div style="text-align: justify; font-size: 1.1rem; line-height: 1.6;">
+                        <p style="margin-bottom: 1rem;">Over the past decade urban researchers and practitioners have
+                            given significant attention towards enhancement of walkability in cities of the Global
+                            South. However, achievement in real terms has remained weak due to the complex challenges
+                            arising from shared use of streets by multiple stakeholders including pedestrians and
+                            informal sector activities, climate stress, and fragmented governance of pedestrian spaces.
+                        </p>
+                        <p style="margin-bottom: 1rem;">Walking has the highest share of first and last mile trips in
+                            cities of the Global South. But where do pedestrians walk? The sidewalk or the footpath is
+                            often ill defined and under-maintained in these cities. Do these pedestrian spaces need any
+                            special recognition? Again, are these the only spaces where pedestrians walk in these
+                            cities? Should pedestrian spaces then be redefined? Again, while idealised visions of the
+                            walkable city are promoted through sanitized urban street design guidelines, do they address
+                            the identity and diverse needs of the walking crowds in these cities? Should planners and
+                            urban designers think of pedestrian spaces only as material infrastructure, or should an
+                            integrated vision be developed for pedestrian spaces where walking and informal sector
+                            activities co-exist, where walking is comfortable and safe for all, where the effect of
+                            climate stress on pedestrians is mitigated? </p>
+                        <p style="margin-bottom: 1rem;">Planning, designing and governing pedestrian spaces in cities of
+                            the Global South requires a fresh approach. This requires reorientation of theoretical
+                            frameworks for a better understanding of how pedestrians interact with the physical space on
+                            the sidewalk which is also shared by informal sector activities. Governance models for
+                            pedestrian spaces also requires a deeper understanding of the use of space and the temporal
+                            rhythms on the sidewalk, along with sensitization towards gender and climate concerns. This
+                            interdisciplinary conference brings together scholars, practitioners, and policy actors from
+                            planning, urban design, architecture, and the social sciences and humanities to critically
+                            examine how pedestrian spaces are co-produced in the Global South. It invites empirical
+                            research, comparative case studies, ethnographic accounts, spatial analyses, and design-led
+                            inquiries on the following themes: </p>
+                        <ul style="margin-left: 2rem; margin-top: 1rem; color: #000;">
+                            <li style="margin-bottom: 0.5rem;">Historical perspectives</li>
+                            <li style="margin-bottom: 0.5rem;">Socio-cultural dimensions</li>
+                            <li style="margin-bottom: 0.5rem;">Planning and design </li>
+                            <li style="margin-bottom: 0.5rem;">Policy and governance</li>
+                            <li style="margin-bottom: 0.5rem;">Informality and Pedestrian Behaviour</li>
+                            <li style="margin-bottom: 0.5rem;">Climate Resilience & Nature-based Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="collaborators" style="text-align: center;">
+                    <!-- <h3>Co-Organized by</h3> -->
+                    <div class="collab-logos"
+                        style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap;">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="MANIT2 (1).png" alt="MANIT Logo" style="height:120px;">
+                            <p style="margin-top: 10px; font-weight: 600; color: #333; text-align: center;">Organizing
+                                Institute</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="School_of_Planning_and_Architecture,_Bhopal_logo.png" alt="SPA Bhopal Logo"
+                                style="height:120px;">
+                            <p style="margin-top: 10px; font-weight: 600; color: #333; text-align: center;">
+                                Co-Organizing Institute</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collaborators" style="text-align: center;">
+                    <!-- <h3>Co-Organized by</h3> -->
+                    <div class="collab-logos"
+                        style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap;">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="vref-logo.png" alt="MANIT Logo" style="height:60px;">
+                            <p style="margin-top: 10px; font-weight: 600; color: #333; text-align: center;">Project
+                                Funding</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="collaborators">
+                    <div class="collab-logos">
+                        <img src="vref-logo.png" alt="VREF Logo" style="height:60px;">
+                        
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="committee" class="committee">
+            <div class="container">
+                <h2>Organizing Committee</h2>
+
+                <div class="committee-group chief-patron">
+                    <h3 class="committee-title">Chief Patron</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Prof. K. K. Shukla_1.jpg" alt="Prof. Karunesh Kumar Shukla">
+                            </div>
+                            <h4>Prof. Dr. K.K. Shukla</h4>
+                            <p>Director, MANIT Bhopal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="committee-group patrons">
+                    <h3 class="committee-title">Patron</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Anupama_Sharma.jpg" alt="Anupama_Sharma">
+                            </div>
+                            <h4>Prof. Dr. Anupama Sharma</h4>
+                            <p>Dean, Institutional Development & International Relations</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">MANIT Bhopal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="committee-group co-patrons">
+                    <h3 class="committee-title">Conference Chair</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="nakuld.jpg" alt="Dr. Nakul Dhagat">
+                            </div>
+                            <h4>Prof. Dr. Nakul Dhagat</h4>
+                            <p>HOD, Department of Architecture & Planning</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">MANIT Bhopal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="committee-group conference-chair">
+                    <h3 class="committee-title">Conference Chairperson</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="manmohan kapse.png" alt="Prof. Manmohan Kapse">
+                            </div>
+                            <h4>Prof. Manmohan Kapshe</h4>
+                            <p>Department of Architecture & Planning</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">MANIT Bhopal</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="committee-group secretaries">
+                    <h3 class="committee-title">Conference Secretaries</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Dr._P_D_Gupta.png" alt="Dr._P_D_Gupta">
+                            </div>
+                            <h4>Dr. Premjeet Das Gupta</h4>
+                            <p>Department of Architecture & Planning</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">MANIT Bhopal</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Surabhi Mehrotra1.jpg" alt="Dr. Surabhi Mehrotra">
+                            </div>
+                            <h4>Dr. Surabhi Mehrotra</h4>
+                            <p>Department of Architecture & Planning</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">MANIT Bhopal</p>
+                        </div>
+
+
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Arshi_Parashar_Photograph.png" alt="Arshi_Parashar">
+                            </div>
+                            <h4>Dr. Arshi Parashar</h4>
+                            <p>Department of Architecture & Planning</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">MANIT Bhopal</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="committee-group secretaries">
+                    <h3 class="committee-title">Joint Organizing Secretaries</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Gayatri_Nanda.jpg" alt="Gayatri_Nanda">
+                            </div>
+                            <h4>Dr. Gayatri Nanda</h4>
+                            <p>Assistant Professor, Department of Urban Design</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">SPA, Bhopal</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="KarnaSenGupta.jpg" alt="KarnaSenGupta">
+                            </div>
+                            <h4>Ar. Karna Sengupta</h4>
+                            <p>Assistant Professor, Department of Urban Design</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">SPA, Bhopal</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="committee-group technical-committee" style="margin-top: 5rem;">
+                    <h2>Technical Committee</h2>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Aneerudha_Paul.jpg" alt="Member 4"
+                                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23ccc\'%3E%3Cpath d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/%3E%3C/svg%3E'">
+                            </div>
+
+                            <h4>Dr. Aneerudha Paul</h4>
+                            <p>Professor</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;"> USM's Kamla Raheja Vidyanidhi
+                                Institute for Architecture and Environmental Studies (KRVIA)</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="anuparna.jpeg" alt="Member 1"
+                                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23ccc\'%3E%3Cpath d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/%3E%3C/svg%3E'">
+                            </div>
+                            <h4>Dr. Anuparna Mukherjee</h4>
+                            <p>Assistant Professor, Humanities and Social Sciences</p>
+                            <!--<p>Head of the Doctoral Office</p>-->
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">IISER, Bhopal</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Rutul_Joshi.jpeg" alt="Member 1"
+                                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23ccc\'%3E%3Cpath d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/%3E%3C/svg%3E'">
+                            </div>
+                            <h4>Dr. Rutul Joshi</h4>
+                            <p>Sr. Associate Professor, Faculty of Planning</p>
+                            <!--<p>Program Chair of the Master of Urban Planning (MUP)</p>
+                            <p>Head of the Doctoral Office</p>-->
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">CEPT University</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Shreya_Banerjee.jpeg" alt="Member 3"
+                                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23ccc\'%3E%3Cpath d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/%3E%3C/svg%3E'">
+                            </div>
+
+                            <h4>Dr. Shreya Banerjee</h4>
+                            <p>Assistant Professor</p>
+                            <p>Architecture and Regional Planning</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">IIT Kharagpur</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="SheuliMitra.jpeg" alt="Member 3"
+                                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23ccc\'%3E%3Cpath d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/%3E%3C/svg%3E'">
+                            </div>
+
+                            <h4>Dr. Sheuli Mitra</h4>
+                            <p>Professor, Department of Urban & Regional Planning</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">SPA, Bhopal</p>
+                        </div>
+
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="SuchismitaNayak.png" alt="Member 4"
+                                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23ccc\'%3E%3Cpath d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/%3E%3C/svg%3E'">
+                            </div>
+
+                            <h4>Dr. Suchismita Nayak</h4>
+                            <p>Assistant Professor, Department of Urban and Regional Planning</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">SPA, Bhopal</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="tech-img">
+                                <img src="Tathagata_Chatterji.jpg" alt="Member 2"
+                                    onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23ccc\'%3E%3Cpath d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/%3E%3C/svg%3E'">
+                            </div>
+                            <h4>Dr. Tathagata Chatterji</h4>
+                            <p>Professor of Urban Management and Governance</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">Xavier Institute of
+                                Management,Bhubaneswar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="sessions" class="conference-sessions">
+            <div class="container">
+                <h2>Conference Sessions &amp; Speakers</h2>
+
+                <h3 style="margin-top:1.5rem;">INTERNATIONAL CONFERENCE CUM WORKSHOP ON URBAN LIVABILITY 2025 :
+                    NAVIGATING CLIMATE EXTREMES IN THE GLOBAL SOUTH</h3>
+                <h4>AGENDA OUTLINE: DAY 01</h4>
+                <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; margin-bottom:2rem;">
+                        <thead>
+                            <tr style="background:#f8f9fa;">
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Time</th>
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Session</th>
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Details / Speakers
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">09:00 – 10:00 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Registration</td>
+                                <td style="padding:12px; border:1px solid #ddd;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">10:00 – 10:45 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Inaugural Session</td>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    • Lighting of the Lamp<br>
+                                    • Welcome Address<br>
+                                    • Inaugural Address<br>
+                                    • Address by Director MANIT<br>
+                                    • Guest of honor – Director General, EPCO Bhopal<br>
+                                    • Chief Guest - Additional Chief Secretary UDHD M.P<br>
+                                    • Vote of Thanks
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">10:45 – 11:15 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Inaugural Keynote</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Prof. Dev Niyogi, The University of
+                                    Texas, USA</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">11:15 – 11:30 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">High Tea</td>
+                                <td style="padding:12px; border:1px solid #ddd;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">11:30 – 12:00 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Plenary Keynote 1</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Dr. Akhilesh Surjan, Charles Darwin
+                                    University, Australia</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">12:00 – 12:30 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Plenary Keynote 2</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Prof. Rajshree Kotharkar, Visvesvaraya
+                                    National Institute of Technology (VNIT) Nagpur</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;" rowspan="2">12:30 – 14:00 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Oral Presentations - Parallel Session
+                                    of Theme - 01<br><em>Extreme events and Built Infrastructure</em></td>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Plenary chairs:</strong><br>
+                                    Dr. Saswat Bandopadhyay, CEPT University<br>
+                                    Dr. Bhaskar Sinha, IIFM Bhopal<br>
+                                    Dr. Rama Pandey, SPA Bhopal<br>
+                                    Dr. Manmohan Kapshe, MANIT Bhopal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Oral Presentations - Parallel Session
+                                    of Theme – 02<br><em>Disaster Risk Mapping and Coping Mechanisms</em></td>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Plenary chairs:</strong><br>
+                                    Dr. Jyoti Sarup, MANIT Bhopal<br>
+                                    Dr. Mohammed Firoz C., NIT Calicut<br>
+                                    Dr. Naveen Prashar, MANIT Bhopal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">14:00 – 14:45 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Lunch break</td>
+                                <td style="padding:12px; border:1px solid #ddd;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">14:45 – 15:15 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Plenary Keynote 3</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Dr. Arpita Mondal, Indian Institute of
+                                    Technology (IIT) Bombay</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">15:15 – 15:45 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Plenary Keynote 4</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Dr. Mohammed Firoz C, National
+                                    Institute of Technology, Calicut</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;" rowspan="2">15:45 – 17:15 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Oral Presentations - Parallel Session
+                                    of Theme - 03<br><em>Public Health, Travel Behaviour and Vulnerabilities to Climate
+                                        Extremes</em></td>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Plenary chairs:</strong><br>
+                                    Dr. Bivina G R, MANIT Bhopal<br>
+                                    Dr. Alka Bharat, MANIT Bhopal<br>
+                                    Dr. Anuj Jaiswal, MANIT Bhopal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Oral Presentations - Parallel Session
+                                    of Theme - 04<br><em>Technology/Approaches for Building Urban Resilience</em></td>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Plenary chairs:</strong><br>
+                                    Dr. Vikas Poonia, MANIT Bhopal<br>
+                                    Dr. Sourabh Ojha, SPA Bhopal<br>
+                                    Prof. Yogesh Garg, MANIT Bhopal<br>
+                                    Dr. Rutuja M. Chavan, MANIT Bhopal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">17:15 – 17:30 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Closing Remarks</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Feedback and takeaways</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">18:30 hrs onward</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Cultural and Networking Dinner</td>
+                                <td style="padding:12px; border:1px solid #ddd;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>AGENDA OUTLINE: DAY 02</h4>
+                <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; margin-bottom:2rem;">
+                        <thead>
+                            <tr style="background:#f8f9fa;">
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Time</th>
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Session</th>
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Details / Speakers
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">06:30 – 09:00 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Morning excursion</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Visit to Upper Lake and Van Vihar</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">10:00 – 10:15 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Inaugural Session &amp; Workshop
+                                    Introduction</td>
+                                <td style="padding:12px; border:1px solid #ddd;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">10:15 – 10:30 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Keynote Speaker 1</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Dr. Seema Javed, Climate Journalist
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">10:30 – 11:15 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Keynote Speaker 2</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Ms. Meghna Malhotra, Deputy Director -
+                                    Urban Management Centre</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">11:15 – 11:45 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Participatory Mapping on Climate
+                                    Extreme in Bhopal &amp; Fiji</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Grace Tudreu and Dr. Surabhi Mehrotra,
+                                    MANIT Bhopal</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">11:45 – 12:00 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">High Tea</td>
+                                <td style="padding:12px; border:1px solid #ddd;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">12:00 – 12:30 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Keynote Speaker on Climate extreme
+                                    events &amp; Policies</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Dr. Yasemin D Aktas, CEGE, University
+                                    College London, UK</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;" rowspan="2">12:30 – 14:00 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Oral Presentations - Parallel Session
+                                    of Theme - 05<br><em>Adaptation and mitigation strategies for Heat Resilience</em>
+                                </td>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Plenary chairs:</strong><br>
+                                    Dr. Saurabh Popli, SPA-Bhopal<br>
+                                    Mr. Prateek Barapatre, WRI India<br>
+                                    Dr. Rajat Soni, MANIT Bhopal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Oral Presentations - Parallel Session
+                                    of Theme - 06<br><em>Climate Change Policies and Governance</em></td>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    <strong>Plenary chairs:</strong><br>
+                                    Mr. Lokendra Thakkar, EPCO, Bhopal<br>
+                                    Dr. Anurag Bagade, SPA Vijaywada<br>
+                                    Prof. Preeti Onkar, MANIT Bhopal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">14:00 – 14:45 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Lunch</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Workshop: Multi-stakeholder Dialogue on
+                                    ‘Climate Resilient Action Plan for Low-Income Communities’</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">14:45 – 15:15 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Keynote Speaker 3</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Dr. Flora Szkordilisz, MD, Specialist
+                                    Kft., Hungary</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">15:15 – 15:45 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Keynote Speaker 4</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Dr. Saswat Bandopadhyay, CEPT
+                                    University</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">15:45 – 17:00 hrs.</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Panel Discussion<br><em>Accelerating
+                                        Climate Action in low-income communities</em><br>Panel Moderator – Prof. Alka
+                                    Bharat</td>
+                                <td style="padding:12px; border:1px solid #ddd;">
+                                    Dr. Seema Javed, Climate Journalist<br>
+                                    Shri. Lokendra Thakkar, EPCO, Bhopal<br>
+                                    Commissioner, BMC, Bhopal<br>
+                                    Dr. K.K. Dhote, MANIT Bhopal<br>
+                                    Dr. Subhashish Banerjee, ITPI MP Chapter<br>
+                                    Mr. Saurabh Kumar Singh, Deputy Director, MP State Disaster Management Authority<br>
+                                    Dr. Rama Pandey, SPA Bhopal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">17:00 – 17:30 hrs</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Interactive Feedback Session + Nukkad
+                                    Natak</td>
+                                <td style="padding:12px; border:1px solid #ddd;"></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">17:30 onwards</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Felicitations</td>
+                                <td style="padding:12px; border:1px solid #ddd;">Conclusion + Tea</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                 <p style="margin-top:1rem;">
+                    <strong>Contact:</strong> Student Co-ordinator: +91 98047 27419, +91 82753 86296
+                    &nbsp; | &nbsp; <strong>Website:</strong> <a href="https://conf.manit.ac.in/CoUL2025/"
+                        target="_blank">conf.manit.ac.in/CoUL2025/</a>
+                </p> 
+            </div>
+        </section> -->
+
+        <section id="themes" class="themes">
+            <div class="container">
+                <h2>Themes</h2>
+                <p class="theme-intro">Extended abstracts are invited for following themes:</p>
+                <div class="themes-grid">
+                    <div class="theme-card">
+                        <div class="theme-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Historical Perspectives</h3>
+
+                    </div>
+
+                    <div class="theme-card">
+                        <div class="theme-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Socio-Cultural Dimensions
+                        </h3>
+
+                    </div>
+
+                    <div class="theme-card">
+                        <div class="theme-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Planning and Design</h3>
+
+                    </div>
+
+                    <div class="theme-card">
+                        <div class="theme-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Policy and Governance</h3>
+
+                    </div>
+
+                    <div class="theme-card">
+                        <div class="theme-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Informality and Pedestrian Behaviour</h3>
+
+                    </div>
+
+                    <div class="theme-card">
+                        <div class="theme-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Climate Resilience & Nature-based Solutions</h3>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="tracks" class="tracks">
+        <div class="container">
+            <h2>Conference Tracks</h2>
+            <div class="track-grid">
+                <div class="track-card">
+                    <h3>A. Extreme weather events and Built Environment</h3>
+                    <ul>
+                        <li>Built forms, Urban planning, resilient design</li>
+                    </ul>
+                </div>
+                <div class="track-card">
+                    <h3>B. Socio-economic Vulnerabilities to Climate Extremes</h3>
+                    <ul>
+                        <li>Livelihood risk and vulnerabilities</li>
+                        <li>Travel Behaviour</li>
+                        <li>Socio-Economic impact</li>
+                    </ul>
+                </div>
+                <div class="track-card">
+                    <h3>C. Technology Innovations and Approaches for Urban Resilience</h3>
+                    <ul>
+                        <li>Digital twin</li>
+                        <li>AI and ML</li>
+                        <li>Remote sensing and GIS</li>
+                        <li>Prediction models</li>
+                    </ul>
+                </div>
+                <div class="track-card">
+                    <h3>D. Disaster risk mapping and management</h3>
+                    <ul>
+                        <li>Climate risk mapping</li>
+                        <li>Heat action plans</li>
+                        <li>Adaptation plans</li>
+                        <li>Flood risk assessment</li>
+                    </ul>
+                </div>
+                <div class="track-card">
+                    <h3>E. Adaptation and mitigation strategies for Heat Resilience</h3>
+                    <ul>
+                        <li>Mitigating Carbon emissions</li>
+                        <li>Green and blue infrastructure</li>
+                    </ul>
+                </div>
+                <div class="track-card">
+                    <h3>F. Climate Change Policies and Governance</h3>
+                    <ul>
+                        <li>Green Financing</li>
+                        <li>Governance</li>
+                        <li>Environmental, Social, ESGs</li>
+                        <li>NDCs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+        <!-- <section id="segments" class="segments">
+            <div class="container">
+                <h2>Main Events</h2>
+                <p class="section-intro">The conference includes following segments:</p>
+                <div class="segments-grid">
+                    <div class="segment-card">
+                        <div class="segment-number">1</div>
+                        <div class="segment-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Plenary Sessions</h3>
+                        <p>Expert sessions featuring distinguished speakers and industry leaders</p>
+                    </div>
+
+                    <div class="segment-card">
+                        <div class="segment-number">2</div>
+                        <div class="segment-icon">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <h3>International Workshop</h3>
+                        <p>Workshop on Climate Change Vulnerability Assessment</p>
+                    </div>
+
+                    <div class="segment-card">
+                        <div class="segment-number">3</div>
+                        <div class="segment-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Panel Discussions</h3>
+                        <p>Extreme Climate Events - Way forward to Mitigation and Adaptation</p>
+                    </div>
+
+                    <div class="segment-card">
+                        <div class="segment-number">4</div>
+                        <div class="segment-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Research Paper Presentations</h3>
+                        <p>6 Technical sessions (hybrid mode)</p>
+                    </div>
+
+                    <div class="segment-card">
+                        <div class="segment-number">5</div>
+                        <div class="segment-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Research Projects and Poster Presentation</h3>
+                        <p>Showcase of innovative research projects and poster presentations</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="dates" class="dates">
+            <div class="container">
+                <h2>Important Dates</h2>
+                <div class="dates-timeline">
+                    <!-- <div class="timeline-item">
+                    <div class="timeline-content left">
+                        <div class="timeline-date">10th September 2025  </div>
+                        <h3>Last Date of Full-Length Paper Submission</h3>
+                    </div>
+                </div> -->
+                    <div class="timeline-item">
+                        <div class="timeline-content left">
+                            <div class="timeline-date">1 May 2026 </div>
+                            <h3>Abstract Submission</h3>
+                        </div>
+                    </div>
+                    <!-- <div class="timeline-item">
+                    <div class="timeline-content right">
+                        <div class="timeline-date">5th October 2025  </div>
+                        <h3>Paper Acceptance Notification and Registration Starts</h3>
+                    </div>
+                </div> -->
+                    <div class="timeline-item">
+                        <div class="timeline-content right">
+                            <div class="timeline-date">30 May 2026 </div>
+                            <h3>Last Date - Abstract Submission</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content left">
+                            <div class="timeline-date">5 June 2026 </div>
+                            <h3>Abstract Acceptance Notification and Registration Starts</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content right">
+                            <div class="timeline-date"> 25 June 2026 </div>
+                            <h3>Last Date to Submit Full Length Paper</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content left">
+                            <div class="timeline-date">25 July 2026 </div>
+                            <h3>Paper Acceptance Notification</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content right">
+                            <div class="timeline-date"> 7-8 August 2026 </div>
+                            <h3>Conference</h3>
+                        </div>
+                    </div>
+                    <!-- <div class="timeline-item">
+                        <div class="timeline-content right">
+                            <div class="timeline-date"> 3rd November 2025 </div>
+                            <h3>Registration Close</h3>
+                        </div>
+                    </div> -->
+                    <!-- <div class="timeline-item">
+                        <div class="timeline-content left">
+                            <div class="timeline-date">3rd – 4th November 2025</div>
+                            <h3>International Conference cum Workshop</h3>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="registration" class="registration">
+            <div class="container">
+                <h2>Conference Registration</h2>
+                <div class="cfp-button-container">
+                    <a class="cfp-button" href="COUL_2025_Call For Papers Poster.pdf" target="_blank">Call for
+                        Papers</a>
+                    <a class="cfp-button" href="https://www.morressier.com/call-for-papers/68501d8e1c56e317a8271a81"
+                        target="_blank" style="margin-top: 1rem; display: inline-block;">Paper Submission Link</a>
+                    <a class="cfp-button" href="https://bit.ly/COUL-2025 "
+                        style="margin-top: 1rem; display: inline-block;">Registration link</a>
+                    <a class="cfp-button" href="https://payment.manit.ac.in/general-form" target="_blank"
+                        style="margin-top: 1rem; display: inline-block;">Payment Portal</a>
+                </div>
+                <div id="posterModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button" onclick="closeModal()">&times;</span>
+                        <iframe src="COUL_2025_Call For Papers Poster.pdf" class="modal-poster"
+                            style="width:100%;height:80vh;border:none;" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="registration-grid">
+                    <table style="width:100%; border-collapse:collapse; margin-bottom:2rem;">
+                        <thead>
+                            <tr style="background:#f8f9fa;">
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Category</th>
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Early Bird
+                                    Registration<br>(Till 20th October 2025 )</th>
+                                <th style="padding:12px; border:1px solid #ddd; text-align:left;">Standard
+                                    Registration<br>(21st Oct to 3rd Nov 2025)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Students/ Researchers</td>
+                                <td style="padding:12px; border:1px solid #ddd;">2000</td>
+                                <td style="padding:12px; border:1px solid #ddd;">3000</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Academicians/ Scientists</td>
+                                <td style="padding:12px; border:1px solid #ddd;">3000</td>
+                                <td style="padding:12px; border:1px solid #ddd;">5000</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Industry professionals</td>
+                                <td style="padding:12px; border:1px solid #ddd;">4000</td>
+                                <td style="padding:12px; border:1px solid #ddd;">6000</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Foreign Academicians/ Scientists</td>
+                                <td style="padding:12px; border:1px solid #ddd;">$100</td>
+                                <td style="padding:12px; border:1px solid #ddd;">$150</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Foreign Students/ Researchers</td>
+                                <td style="padding:12px; border:1px solid #ddd;">$50</td>
+                                <td style="padding:12px; border:1px solid #ddd;">$75</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:12px; border:1px solid #ddd;">Only workshop and Co- Authors</td>
+                                <td style="padding:12px; border:1px solid #ddd;">1000</td>
+                                <td style="padding:12px; border:1px solid #ddd;">1500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="font-style:italic; text-align:center; margin-top:-1.5rem; margin-bottom:2rem;">* Presentation
+                    of paper may be in person /online mode (hybrid)</p>
+                <div class="registration-info">
+                    <p>Conference registration includes conference proceedings, access to workshops, conference kit, and
+                        tea & lunch for two days.</p>
+                    <h4>Publication Information:</h4>
+                    <ul>
+                        <li>All accepted and presented papers will be published with an ISBN and assigned a DOI number.
+                        </li>
+                        <li>Selected high-quality papers will be considered for publication in the IOP Conference
+                            Series: Earth and Environmental Science (EES), a Scopus-indexed proceedings volume.</li>
+                        <li>Publication charges may apply after paper acceptance.</li>
+                    </ul>
+                    <h4>For International Participants:</h4>
+                    <ul>
+                        <li>Foreign delegates have the option to present online.</li>
+                    </ul>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section id="submission" class="submission">
+            <div class="container">
+                <h2>Submission Guidelines</h2>
+                <div class="guidelines-content">
+                    <ol>
+                        <li>
+                            <h3>Platform for Submission</h3>
+                            <p>Authors must submit their full papers through the “Morressier” submission platform.<br>
+                                <a href="https://www.morressier.com/call-for-papers/68501d8e1c56e317a8271a81"
+                                    target="_blank">https://www.morressier.com/call-for-papers/68501d8e1c56e317a8271a81</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Account Registration</h3>
+                            <p>If you do not have a Morressier login ID, you can create a new account by registering
+                                with the required details.</p>
+                        </li>
+                        <li>
+                            <h3>Paper Format Templates</h3>
+                            <p>Full paper submissions must strictly follow the prescribed formatting guidelines.
+                                Templates are available in both Word and LaTeX formats and can be downloaded here: <a
+                                    href="https://publishingsupport.iopscience.iop.org/author-guidelines-for-conference-proceedings/5"
+                                    target="_blank">Download Templates</a></p>
+                        </li>
+                        <li>
+                            <h3>Formatting Requirements</h3>
+                            <p>Please adhere to the specified format in terms of font size, line spacing, paragraph
+                                indentation, referencing style, and table/figure design as provided in the templates.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Length of Paper, Word, Table & Figure Limitations</h3>
+                            <p>There are no specific limits on the number of pages, words, tables, or figures.</p>
+                        </li>
+                        <li>
+                            <h3>Figure Resolution</h3>
+                            <p>All figures and illustrations must be clear, high-quality, and embedded within the paper
+                                at a minimum resolution of 300 dpi.</p>
+                        </li>
+                        <li>
+                            <h3>Plagiarism Policy</h3>
+                            <p>All submitted papers will undergo a plagiarism check. Submissions with high similarity
+                                scores (&gt;15%) may be rejected without review.</p>
+                        </li>
+                        <li>
+                            <h3>Review Process</h3>
+                            <p>Full papers will be evaluated through a double-blind peer review process. Authors should
+                                ensure anonymity in the manuscript by removing identifying information.</p>
+                        </li>
+                    </ol>
+                    <div class="guidelines-buttons">
+                        <a href="https://publishingsupport.iopscience.iop.org/author-guidelines-for-conference-proceedings/ "
+                            class="guideline-button">
+                            <i class="fas fa-file-alt"></i>
+                            Manuscript Format Guidelines & Author Guidelines
+                        </a>
+                        <a href="https://www.morressier.com/call-for-papers/68501d8e1c56e317a8271a81" target="_blank"
+                            class="guideline-button">
+                            <i class="fas fa-upload"></i>
+                            Paper Submission Portal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <!-- <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <p>Conference Website: <a href="#" target="_blank">conf.manit.ac.in/RPS2026/</a></p>
+                    </div> -->
+                    <div class="contact-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <p>Coordinators - <br>Dr. Divya S Agarwal (9621073467) <br> Tanmay Mondal (8777576402)</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: rpscgs.manit2026@gmail.com</p>
+                    </div>
+                    <!-- <div class="contact-item">
+                        <i class="fas fa-upload"></i>
+                        <p>Submission Portal: <a
+                                href="https://www.morressier.com/call-for-papers/68501d8e1c56e317a8271a81"
+                                target="_blank">https://www.morressier.com/call-for-papers/68501d8e1c56e317a8271a81</a>
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 RPSCGS - Rethinking Pedestrian Spaces
+                    for Cities of the Global South.</p>
+            </div>
+        </footer>
+
+        <div class="scroll-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <script src="script.js"></script>
+        <!-- Modal Script -->
+        <script>
+            window.addEventListener("load", function () {
+                const modal = document.getElementById("modal");
+                const closeBtn = document.querySelector(".close-button");
+
+                // Show modal on page load
+                modal.style.display = "flex";
+
+                // Close modal on close button
+                closeBtn.addEventListener("click", function () {
+                    modal.style.display = "none";
+                });
+
+                // Close modal if user clicks outside content
+                window.addEventListener("click", function (e) {
+                    if (e.target === modal) {
+                        modal.style.display = "none";
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</html>
