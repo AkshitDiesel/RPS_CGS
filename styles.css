@@ -269,9 +269,9 @@ nav {
 
 /* Hero Section */
 .hero {
-    height: 134vh;
+    height: 100vh;
     /* Uses background.jpeg with a dark overlay to make white text readable */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('BG_New.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url('BG_New.jpeg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-start;
