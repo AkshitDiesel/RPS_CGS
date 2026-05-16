@@ -271,7 +271,7 @@ nav {
 .hero {
     height: 100vh;
     /* Uses background.jpeg with a dark overlay to make white text readable */
-    background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url('BG_New.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('BG_New.jpeg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-start;
