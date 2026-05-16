@@ -5,15 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RPS-CGS 2026</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <style>
-            body {
-                font-family: 'Segoe UI', sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-
             /* Modal Overlay */
             .modal-overlay {
                 display: none;
@@ -111,12 +106,12 @@
     <body>
 
         <header>
-            <nav>
+            <nav class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center">
                 <div class="logo-container">
                     <img src="RPSCGS_PNG_TRANS.png" alt="MANIT Logo" class="manit-logo">
                     <!-- <img src="coul2025.png" alt="COUL 2025 Logo" class="coul-logo" style="z-index: auto;"> -->
                 </div>
-                <ul class="nav-links">
+                <ul class="nav-links mb-0">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#committee">Committee</a></li>
@@ -171,20 +166,31 @@
 
         <section id="home" class="hero">
             <div class="metallic-overlay"></div>
-            <div class="hero-content">
-                <h3 class="metallic-text" style="font-size: 1.2rem; font-weight: 500;">
-                    International Conference</h3>
-                <h2 class="metallic-text subtitle-large"
-                    style="font-size: 3rem; line-height: 1.2; margin-bottom: 1rem;color:white;">Rethinking Pedestrian
-                    Spaces<br>for Cities of the Global South <br>2026</h2>
-                <p class="date metallic-text" style="font-size: 1.2rem; margin-bottom: 1rem;">August 7-8, 2026</p>
-                <p class="metallic-text" style="font-size: 1.2rem; line-height: 1.5; margin-bottom: 2rem;">Organised by
-                    <br><b>Department of Architecture &
-                        Planning</b><br>
-                    Maulana Azad National Institute of Technology, Bhopal
-                </p>
+            <div class="container-fluid px-4 px-lg-5" style="max-width: 1200px; margin: 0 auto;">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="hero-content">
+                            <h3 class="metallic-text mb-2"
+                                style="font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 700 !important;">
+                                International Conference</h3>
+                            <h2 class="metallic-text subtitle-large mb-3"
+                                style="font-size: clamp(1.5rem, 5vw, 3rem); line-height: 1.2; color:white; font-weight: 700 !important;">
+                                Rethinking
+                                Pedestrian
+                                Spaces<br>for Cities of the Global South <br>2026</h2>
+                            <p class="date metallic-text mb-2" style="font-size: clamp(1rem, 2vw, 1.2rem);">August 7-8,
+                                2026</p>
+                            <p class="metallic-text mb-4"
+                                style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.5;">Organised by
+                                <br><b>Department of Architecture &
+                                    Planning</b><br>
+                                Maulana Azad National Institute of Technology, Bhopal
+                            </p>
 
-                <!-- <a href="#registration" class="cta-button metallic-button"><b>Register Now</b></a> -->
+                            <!-- <a href="#registration" class="cta-button metallic-button"><b>Register Now</b></a> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -436,7 +442,7 @@
                     <div class="tech-grid">
                         <div class="tech-card">
                             <div class="tech-img">
-                                <img src="Gayatri_Nanda.JPG" alt="Gayatri_Nanda">
+                                <img src="Gayatri_Nanda.jpg" alt="Gayatri_Nanda">
                             </div>
                             <h4>Dr. Gayatri Nanda</h4>
                             <p>Assistant Professor, Department of Urban Design</p>
@@ -444,7 +450,7 @@
                         </div>
                         <div class="tech-card">
                             <div class="tech-img">
-                                <img src="KarnaSenGupta.JPG" alt="KarnaSenGupta">
+                                <img src="KarnaSenGupta.jpg" alt="KarnaSenGupta">
                             </div>
                             <h4>Ar. Karna Sengupta</h4>
                             <p>Assistant Professor, Department of Urban Design</p>
@@ -984,7 +990,7 @@
                     <div class="timeline-item">
                         <div class="timeline-content left">
                             <div class="timeline-date">1 May 2026 </div>
-                            <h3>Abstract Submission</h3>
+                            <p style="font-weight: 400 !important;font-size: 1.2rem;"><b>Abstract Submission</b></p>
                         </div>
                     </div>
                     <!-- <div class="timeline-item">
@@ -996,31 +1002,35 @@
                     <div class="timeline-item">
                         <div class="timeline-content right">
                             <div class="timeline-date">30 May 2026 </div>
-                            <h3>Last Date - Abstract Submission</h3>
+                            <p style="font-weight: 400 !important;font-size: 1.2rem;"><b>Last Date - Abstract
+                                    Submission</b></p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content left">
                             <div class="timeline-date">5 June 2026 </div>
-                            <h3>Abstract Acceptance Notification and Registration Starts</h3>
+                            <p style="font-weight: 400 !important;font-size: 1.2rem;"><b>Abstract Acceptance
+                                    Notification and Registration Starts</b></p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content right">
                             <div class="timeline-date"> 25 June 2026 </div>
-                            <h3>Last Date to Submit Full Length Paper</h3>
+                            <p style="font-weight: 400 !important;font-size: 1.2rem;"><b>Last Date to Submit Full Length
+                                    Paper</b></p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content left">
                             <div class="timeline-date">25 July 2026 </div>
-                            <h3>Paper Acceptance Notification</h3>
+                            <p style="font-weight: 400 !important;font-size: 1.2rem;"><b>Paper Acceptance
+                                    Notification</b></p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-content right">
                             <div class="timeline-date"> 7-8 August 2026 </div>
-                            <h3>Conference</h3>
+                            <p style="font-weight: 400 !important;font-size: 1.2rem;"><b>Conference</b></p>
                         </div>
                     </div>
                     <!-- <div class="timeline-item">
@@ -1201,11 +1211,12 @@
                     </div> -->
                     <div class="contact-item">
                         <i class="fas fa-user-graduate"></i>
-                        <p>Coordinators - <br>Dr. Divya S Agarwal (9621073467) <br> Tanmay Mondal (8777576402)</p>
+                        <p><b>Coordinators -</b> <br>Dr. Divya S Agarwal (9621073467) <br> Tanmay Mondal (8777576402)
+                        </p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>Email: rpscgs.manit2026@gmail.com</p>
+                        <p><b>Email -</b>: rpscgs.manit2026@gmail.com</p>
                     </div>
                     <!-- <div class="contact-item">
                         <i class="fas fa-upload"></i>
