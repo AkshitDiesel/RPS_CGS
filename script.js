@@ -219,4 +219,25 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeModal();
     }
+});
+
+// Tab Functionality for Registration Section
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.cfp-tab');
+    const tabContents = document.querySelectorAll('.cfp-tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs and contents
+            tabs.forEach(t => t.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+
+            // Add active class to clicked tab and corresponding content
+            tab.classList.add('active');
+            const target = document.getElementById(tab.getAttribute('data-tab'));
+            if (target) {
+                target.classList.add('active');
+            }
+        });
+    });
 }); 
