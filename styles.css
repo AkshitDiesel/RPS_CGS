@@ -418,15 +418,17 @@ only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: la
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);
-    background-size: 300% 300%;
+    /*background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);*/
+    background: #fff;
+    background-size: 250% 250%;
     animation: gradientBG 5s ease infinite;
-    color: white;
+    color: rgb(5, 61, 82);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     border: none;
+    font-size: 1.1rem;
 }
 
 @keyframes zoomInOutHover {
@@ -444,7 +446,7 @@ only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: la
 }
 
 .cta-button:hover {
-    animation: zoomInOutHover 1.5s ease-in-out infinite;
+    /*animation: zoomInOutHover 1.5s ease-in-out infinite;*/
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
