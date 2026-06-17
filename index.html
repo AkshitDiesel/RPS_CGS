@@ -67,6 +67,32 @@
                 transform: translate(0);
             }
 
+            @media (max-width: 768px) {
+                .button {
+                    font-size: 0.7rem;
+                    border-radius: 1rem;
+                    margin: 0 0.25rem !important;
+                }
+
+                .button__text {
+                    padding: 2px 0.5rem 2px;
+                    padding-left: 0.25rem;
+                }
+
+                .button__icon {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                .button-content {
+                    font-size: 0.7rem;
+                }
+
+                .registration-btn-container {
+                    justify-content: center !important;
+                }
+            }
+
             /* Modal Overlay */
             .modal-overlay {
                 display: none;
@@ -171,7 +197,7 @@
                     <!-- <img src="coul2025.png" alt="COUL 2025 Logo" class="coul-logo" style="z-index: auto;"> -->
                 </div>
                 <ul class="nav-links mb-0">
-                    <!--<li><a href="#home">Home</a></li>-->
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#committee">Committee</a></li>
                     <li><a href="#themes">Themes</a></li>
@@ -538,7 +564,8 @@
 
                             <h4>Dr. Aneerudha Paul</h4>
                             <p>Professor, Design Chair</p>
-                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;"> SKLT College of Architecture, Mumbai</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;"> SKLT College of Architecture,
+                                Mumbai</p>
                         </div>
                         <div class="tech-card">
                             <div class="tech-img">
@@ -570,7 +597,8 @@
                             <h4>Meghna Malhotra</h4>
                             <p>Deputy Director</p>
                             <!--<p>Head of the Doctoral Office</p>-->
-                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">Urban Management Centre (UMC), Ahmedabad</p>
+                            <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">Urban Management Centre (UMC),
+                                Ahmedabad</p>
                         </div>
 
                         <div class="tech-card">
@@ -1154,16 +1182,17 @@
                             style="border: none; max-width: 100%; min-height: 800px; overflow: hidden;" frameborder="0"
                             marginheight="0" marginwidth="0">
                         </iframe>
-                        <div style="display: flex; flex-direction: row; padding-top: 1.5rem;">
+                        <div class="registration-btn-container"
+                            style="display: flex; flex-direction: row; padding-top: 1.5rem;">
                             <button class="button"
-                            style="--clr: #09598b;display:flex; justify-content:center; align-items:center; width: max-content; margin: 0 auto;">
-                            <span class="button-decor"></span>
-                            <div class="button-content">
-                                <div class="button__icon">
+                                style="--clr: #09598b;display:flex; justify-content:center; align-items:center; width: max-content; margin: 0 auto;">
+                                <span class="button-decor"></span>
+                                <div class="button-content">
+                                    <div class="button__icon">
 
-                                   <i class="fa-solid fa-download" style="color: #fff;"></i>
+                                        <i class="fa-solid fa-download" style="color: #fff;"></i>
 
-                                    <!--<svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                                        <!--<svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
                                         <circle opacity="0.5" cx="25" cy="25" r="23"
                                             fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"></circle>
                                         <mask id="icon-payments-cat_svg__a" fill="#fff">
@@ -1185,31 +1214,35 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>-->
+                                    </div>
+                                    <a href="https://github.com/AkshitDiesel/RPS_CGS/raw/refs/heads/main/Template_paper_RPSCGS_2026.docx"
+                                        download="Template_paper_RPSCGS_2026.docx"
+                                        style="text-decoration: none; color: inherit;">
+                                        <span class="button__text" style="max-width: auto !important;">Download
+                                            Template</span>
+                                    </a>
                                 </div>
-                                <a href="https://github.com/AkshitDiesel/RPS_CGS/raw/refs/heads/main/Template_paper_RPSCGS_2026.docx" download="Template_paper_RPSCGS_2026.docx" style="text-decoration: none; color: inherit;">
-                                    <span class="button__text" style="max-width: auto !important;">Download Template</span>
-                                </a>
-                            </div>
                             </button>
                             <button class="button"
-                            style="--clr: #09598b;display:flex; justify-content:center; align-items:center; width: max-content; margin: 0 auto;">
-                            <span class="button-decor"></span>
-                            <div class="button-content">
-                                <div class="button__icon">
-                                    <i class="fa-solid fa-upload" style="color: #fff;"></i>
+                                style="--clr: #09598b;display:flex; justify-content:center; align-items:center; width: max-content; margin: 0 auto;">
+                                <span class="button-decor"></span>
+                                <div class="button-content">
+                                    <div class="button__icon">
+                                        <i class="fa-solid fa-upload" style="color: #fff;"></i>
+                                    </div>
+                                    <a href="https://cmt3.research.microsoft.com/RPSCGS2026/Submission/Index"
+                                        target="_blank" style="text-decoration: none; color: inherit;">
+                                        <span class="button__text" style="max-width: auto !important;">Submit
+                                            Paper</span>
+                                    </a>
                                 </div>
-                                <a href="https://cmt3.research.microsoft.com/RPSCGS2026/Submission/Index" target="_blank"
-                                style="text-decoration: none; color: inherit;">
-                                    <span class="button__text" style="max-width: auto !important;">Submit Paper</span>
-                                </a>
-                            </div>
                             </button>
                         </div>
                         <!--<p>Coming soon</p>-->
                     </div>
                     <div class="cfp-tab-content" id="tab2">
                         <h3>Paper Submission Portal</h3>
-                        
+
                         <p>Coming soon</p>
                     </div>
                     <div class="cfp-tab-content" id="tab4">
@@ -1256,34 +1289,36 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div style="display: flex; flex-direction: row;">
-                        <button class="button"
-                            style="--clr: #00ad54;display:flex; justify-content:center; align-items:center; width: max-content; margin: 0 auto;">
-                            <span class="button-decor"></span>
-                            <div class="button-content">
-                                <div class="button__icon">
-                                    <i class="fa-solid fa-circle-arrow-right" style="color: #fff;"></i>
+                        <div class="registration-btn-container" style="display: flex; flex-direction: row;">
+                            <button class="button"
+                                style="--clr: #00ad54;display:flex; justify-content:center; align-items:center; width: max-content; margin: 0 auto;">
+                                <span class="button-decor"></span>
+                                <div class="button-content">
+                                    <div class="button__icon">
+                                        <i class="fa-solid fa-circle-arrow-right" style="color: #fff;"></i>
+                                    </div>
+                                    <a href="https://payment.manit.ac.in/general-form.php" target="_blank"
+                                        style="text-decoration: none; color: inherit;">
+                                        <span class="button__text" style="max-width: auto !important;">Proceed to
+                                            Payment</span>
+                                    </a>
                                 </div>
-                                <a href="https://payment.manit.ac.in/general-form.php" target="_blank"
-                                style="text-decoration: none; color: inherit;">
-                                    <span class="button__text" style="max-width: auto !important;">Proceed to Payment</span>
-                                </a>
-                            </div>
-                        </button>
-                        <!-- From Uiverse.io by Creatlydev -->
-                        <button class="button"
-                            style="--clr: #00ad54;display:flex; justify-content:center; align-items:center; width: max-content; margin: 0 auto;">
-                            <span class="button-decor"></span>
-                            <div class="button-content">
-                                <div class="button__icon">
-                                    <i class="fa-solid fa-user-plus" style="color: #fff;"></i>
+                            </button>
+                            <!-- From Uiverse.io by Creatlydev -->
+                            <button class="button"
+                                style="--clr: #00ad54;display:flex; justify-content:center; align-items:center; width: max-content; margin: 0 auto;">
+                                <span class="button-decor"></span>
+                                <div class="button-content">
+                                    <div class="button__icon">
+                                        <i class="fa-solid fa-user-plus" style="color: #fff;"></i>
+                                    </div>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2vCR3h0kAHR1LZtFDROSJZ5r-2VLbNVjfljemKqABRj93dg/viewform?usp=sharing&ouid=115650518057684020146"
+                                        target="_blank" style="text-decoration: none; color: inherit;">
+                                        <span class="button__text" style="max-width: auto !important;">Register
+                                            Now</span>
+                                    </a>
                                 </div>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2vCR3h0kAHR1LZtFDROSJZ5r-2VLbNVjfljemKqABRj93dg/viewform?usp=sharing&ouid=115650518057684020146" 
-                                target="_blank" style="text-decoration: none; color: inherit;">
-                                    <span class="button__text" style="max-width: auto !important;">Register Now</span>
-                                </a>
-                            </div>
-                        </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1418,10 +1453,10 @@
                     for Cities of the Global South.</p>
             </div>
             <div class="container">
-                <p style="font-size:80%;">The Microsoft CMT service was used for managing the 
-                    peer-reviewing process for this conference. This service 
-                    was provided for free by Microsoft and they bore all expenses, 
-                    including costs for Azure cloud services as well as for 
+                <p style="font-size:80%;">The Microsoft CMT service was used for managing the
+                    peer-reviewing process for this conference. This service
+                    was provided for free by Microsoft and they bore all expenses,
+                    including costs for Azure cloud services as well as for
                     software development and support.</p>
             </div>
         </footer>
