@@ -428,6 +428,7 @@ only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: la
     font-weight: bold;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     border: none;
+    font-size: 1.1rem;
 }
 
 @keyframes zoomInOutHover {
